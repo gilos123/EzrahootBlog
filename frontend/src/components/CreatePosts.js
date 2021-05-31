@@ -55,7 +55,7 @@ class CreatePosts extends Component {
         const sanitizedData = sanitizeHtml(this.state.body.trim());
 
         // If the post body is too less, do not submit
-        if (sanitizedData.length < 400) {
+        if (sanitizedData.length < 50) { //was 400
             alert("Cannot submit such a short post!");
         } else {
             // Display a spinner until the post is submitted

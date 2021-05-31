@@ -3,7 +3,6 @@ import axios from "axios";
 import dotenv from "dotenv";
 
 import GoogleLogin from "react-google-login";
-import TwitterLogin from "react-twitter-login";
 
 dotenv.config();
 const baseURL = process.env.REACT_APP_BASEURL || "http://localhost:5000";
@@ -60,41 +59,7 @@ class Login extends React.Component {
 
     // Twitter login success callback
     // Very similar to the previous google login callback
-    twitterAuthHandler = (err, data) => {
-        if (err) {
-            window.location = "/login";
-        } else {
-            const user = {
-                username: data.screen_name,
-                socialId: data.user_id,
-            };
-
-            axios
-                .post(`${baseURL}/auth/login`, user)
-                .then((res) => {
-                    let count = 0;
-
-                    if (res.data.socialId) {
-                        sessionStorage.setItem("isLoggedIn", "true");
-                        sessionStorage.setItem("username", res.data.username);
-                        count++;
-
-                        window.setTimeout(() => {
-                            sessionStorage.removeItem("isLoggedIn");
-                            sessionStorage.removeItem("username");
-                        }, 24 * 60 * 60 * 60);
-
-                        if (count === 1) {
-                            window.location.reload();
-                        }
-                    } else {
-                        window.location = "/login";
-                    }
-                })
-                .catch((err) => console.error(err));
-        }
-    };
-
+   
     // Google login failure callback
     failureGoogleLogin(response) {
         console.error(response);
@@ -112,7 +77,7 @@ class Login extends React.Component {
                     <hr className="gold-hr" />
                     <div className="google">
                         <GoogleLogin
-                            clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+                            clientId='673478352739-6eev22uef080837blt2ak6igle29sbvu.apps.googleusercontent.com'//{process.env.REACT_APP_GOOGLE_CLIENT_ID}
                             buttonText="Log in With Google"
                             onSuccess={this.successGoogleLogin}
                             onFailure={this.failureGoogleLogin}
@@ -120,20 +85,8 @@ class Login extends React.Component {
                             scope="profile"
                         />
                     </div>
-                    <br />
-                    <div className="twitter">
-                        <TwitterLogin
-                            authCallback={this.twitterAuthHandler}
-                            consumerKey={
-                                process.env.REACT_APP_TWITTER_CONSUMER_ID
-                            }
-                            consumerSecret={
-                                process.env.REACT_APP_TWITTER_CONSUMER_SECRET
-                            }
-                            callbackUrl="https://mern-blog-it.herokuapp.com/login"
-                            buttonTheme="light"
-                        />
-                    </div>
+                    
+                
                 </div>
             </div>
         );

@@ -7,7 +7,7 @@ const Landing = () => (
             Just Blog It<span className="full-stop">.</span>
         </h1>
         <main>
-            This is a blogging platform for all your blogging needs!
+            This is a blogging platform for all your Ezrahoot needs
             <br />
             Want to read some awesome blogs? We've got you covered!
             <br /> Want to write an awesome blog post?

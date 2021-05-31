@@ -6,7 +6,6 @@ import "./stylesheets/index.css";
 
 //Import all components
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 const Landing = lazy(() => import("./components/Landing"));
 const Post = lazy(() => import("./components/Post"));
 const CreatePost = lazy(() => import("./components/CreatePosts"));
@@ -38,7 +37,6 @@ const App = () => (
                     <Route path="/about" component={About} />
                 </Switch>
             </Suspense>
-            <Footer />
         </Router>
     </div>
 );

@@ -8,33 +8,28 @@ const About = () => {
             </h1>
             <main>
                 <p>
-                    This is an installable Blogging app that lets a user delve
-                    into a topic of choice and write a blog post, or read one of
-                    the already uploaded Blog posts.
+                גיל: בתחילת התהליך כאשר נודע לי על העבודה עצמה והנושא שבחרנו חששתי והסתקרנתי , ראיתי בזה אתגר. בתהליך למדתי את החשיבות של עבודה בקבוצה לחקור ולגלות ואיך כל אחד יכול לתרום בחלק אחד ולעשות שינוי גדול. לא היו לי התלבטויות במהלך העבודה זה היה נושא מעניין שהרגשתי שיש לי תשובה ברורה ביני לבין עצמי.
+החלק שנהנתי ממנו יותר היה עבדת החקר שבה נחשפתי לנושא מעניין וחדש שלא ידעתי שקיים והוא כל כך חשוב ובנוסף באמת יש סביבו קהילה תומכת ,מטפלת ואכפתית לנושא. התוצר מספק אותי מכיוון שזו היא הדרך הכי יעילה שאני יכולתי להציע למטרה החשובה הזאת שתוציא מקסימום הצלחה. אני ממליץ על דרך למידה זאת כי לדעתי ולפי מחקרים עדכניים הדרך הטובה ביותר להכניס את החומר למוח היא להסביר אותו. מהעבודה לקחתי לחיים שחשוב מאוד לדאוג גם לאחר וגם לעצמך.
+ 
+                </p>
+                ליה שין:
+התחלתי לעבוד על המטלת ביצוע לפני כמה חודשים.
+בהתחלה בעיקר חיפשתי מקורות כדי להוכיח שהבעיה האזרחית קיימת, ידעתי כבר שנושא יהיה בעייתי לחיפוש כי הנושא שלנו מעט נוגד את ההנחיות אשר הניחו עלינו אבל ברגע שמצאנו את הכתבות הנכונות העניין התחיל להתגלגל ולאט לאט נהיו לנו מספיק מקורות, חיפשתי גם בבית וגם בבית ספר והאמת שהיה מעניין לקרוא את הכתבות בעד ניקיון ובעד זכויות לחיים וביטחון של בעלי החיים.
+
+                <p>
+              
                 </p>
                 <p>
-                    In order to write your very own Blog post, you can
-                    conveniently login using one of your social accounts, and
-                    start penning your thoughts!
+        
                 </p>
                 <p>
-                    You can edit your Blog post at any time, as long as you're
-                    logged in. If you ever feel like your post is no longer a
-                    valid representation of your thoughts, you can also delete
-                    it at any instant of time.
-                </p>
-                <p>
-                    You can also provide your opinions about any post, in the
-                    comments' section of every post, anonymously!
+                    blah
                     <br />
-                    Your comment will always have a unique icon accompanying it.
+                    after enter blah
                 </p>
                 <hr className="gold-hr" />
                 <p>
-                    If you ever feel the need to provide criticism or drop a
-                    suggestion, or if you just want to say "Nice job", feel free
-                    to contact me using the links in the footer
-                    <span className="full-stop">.</span>
+                תודה להערכה החלופית באזרחות שהביאוני עד הלום<span className="full-stop">.</span>
                 </p>
             </main>
         </div>
